@@ -1,11 +1,12 @@
 import React from 'react'
 import { TableContainer,Table,TableHead,TableBody,TableRow,TableCell,Paper} from '@mui/material'
 import Box from '@mui/material/Box';
-import { makeStyles } from '@material-ui/core/styles';
+//import { makeStyles } from '@material-ui/core/styles';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import axios from 'axios';
 
+/*
 const useStyles = makeStyles({
     titulo: {
         display: "flex",
@@ -13,9 +14,10 @@ const useStyles = makeStyles({
         alignItems: "center"
     }
 })
+*/
 
 export default function Tabla() {
-    const classes = useStyles();
+    //const classes = useStyles();
     const [data, setData] = useState([]);
     const [clockState, setClockState] = useState();
 
@@ -58,7 +60,7 @@ export default function Tabla() {
                 borderColor = '#0a9396' 
                 bgcolor={'white'}
             >
-                <h2 className={classes.titulo} 
+                <h2
                 >
                     Espacios disponibles en tiempo real: {clockState}
                 </h2>
